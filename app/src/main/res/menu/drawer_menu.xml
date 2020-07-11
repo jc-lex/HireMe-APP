@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_action_dashboard"
+        />
+    <item
+        android:id="@+id/board"
+        android:title="Job Posts"
+        android:icon="@drawable/ic_action_job"
+        />
+    <item
+        android:id="@+id/payment"
+        android:title="Payment"
+        android:icon="@drawable/ic_action_payment"
+        />
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_action_settings"
+        />
+    <item
+        android:id="@+id/help"
+        android:title="Help"
+        android:icon="@drawable/ic_action_help"
+        />
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_action_logout"
+        />
+
+</menu>
