@@ -4,6 +4,8 @@
       <w>chkemail</w>
       <w>chkemailpassword</w>
       <w>emailpassword</w>
+      <w>tasker</w>
+      <w>taskers</w>
     </words>
   </dictionary>
 </component>

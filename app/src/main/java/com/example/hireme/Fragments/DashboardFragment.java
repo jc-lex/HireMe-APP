@@ -25,7 +25,7 @@ public class DashboardFragment extends Fragment {
 
     View view;
     TextView textView;
-    CardView cv1, cv2,cv3,cv4,cv5;
+    CardView cv1, cv2,cv3,cv4;
 
 
 
@@ -50,12 +50,13 @@ public class DashboardFragment extends Fragment {
         cv2 = view.findViewById(R.id.cleaning);
         cv3 = view.findViewById(R.id.shopping);
         cv4 = view.findViewById(R.id.handy);
-        cv5 = view.findViewById(R.id.gen_help);
+
 
         cv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DashboardFragment.this, Posts.class);
+                Intent intent = new Intent(DashboardFragment.this.getActivity(), Posts.class);
+                intent.putExtra("skill_set", 1);
                 startActivity(intent);
             }
         });
@@ -63,7 +64,8 @@ public class DashboardFragment extends Fragment {
         cv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DashboardFragment.this, Posts.class);
+                Intent intent = new Intent(DashboardFragment.this.getActivity(), Posts.class);
+                intent.putExtra("skill_set", 2);
                 startActivity(intent);
             }
         });
@@ -71,7 +73,8 @@ public class DashboardFragment extends Fragment {
         cv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DashboardFragment.this, Posts.class);
+                Intent intent = new Intent(DashboardFragment.this.getActivity(), Posts.class);
+                intent.putExtra("skill_set", 3);
                 startActivity(intent);
             }
         });
@@ -79,18 +82,12 @@ public class DashboardFragment extends Fragment {
         cv4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DashboardFragment.this, Posts.class);
+                Intent intent = new Intent(DashboardFragment.this.getActivity(), Posts.class);
+                intent.putExtra("skill_set", 4);
                 startActivity(intent);
             }
         });
 
-        cv5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(DashboardFragment.this, Posts.class);
-                startActivity(intent);
-            }
-        });
 
 
 

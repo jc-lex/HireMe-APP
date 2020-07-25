@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Text View"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="60dp"
             android:gravity="center"
             android:textColor="#000000"
             android:textStyle="bold"
@@ -187,49 +187,13 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/gen_help"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="10dp"
-                app:cardBackgroundColor="@color/colorPrimaryDark"
-                android:layout_margin="10dp"
-                >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="General Help"
-                        android:textColor="#ffffff"
-                        android:textSize="20sp"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Assistant,events staffing"
-                        android:textColor="#ffffff"
-                        android:textSize="10sp"
-                        android:textStyle="italic"/>
 
-                    <ImageView
-                        android:layout_width="140dp"
-                        android:layout_height="100dp"
-                        android:gravity="center"
-                        android:src="@drawable/generalhelp" />
-                </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
 
         </GridLayout>
 
 
     </RelativeLayout>
-
 
 
 

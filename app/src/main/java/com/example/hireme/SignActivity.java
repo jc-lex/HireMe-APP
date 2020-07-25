@@ -15,7 +15,7 @@ import com.example.hireme.Fragments.DashboardFragment;
 public class SignActivity extends AppCompatActivity {
     public Button button;
 
-    TextView textView;
+    TextView textView, tv;
     EditText e1,e2;
     DatabaseHelper db;
 
@@ -33,6 +33,15 @@ public class SignActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(SignActivity.this, Register.class);
+                startActivity(intent);
+            }
+        });
+
+        textView= (TextView)findViewById(R.id.forget);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SignActivity.this, Tasker.class);
                 startActivity(intent);
             }
         });
@@ -56,3 +65,4 @@ public class SignActivity extends AppCompatActivity {
 
     }
 }
+
